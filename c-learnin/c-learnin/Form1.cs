@@ -30,7 +30,17 @@ namespace c_learnin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("My first C# applicatication");
+            int myValue = 1000;
+            int myNewValue = 100000;
+
+            bool validation = myValue >= myNewValue;
+
+            if (validation) { 
+                MessageBox.Show("Suceess!");
+            }else
+            {
+                MessageBox.Show("Failed!");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
