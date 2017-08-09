@@ -33,14 +33,16 @@ namespace c_learnin
             int myValue = 1000;
             int myNewValue = 100000;
 
-            bool validation = myValue >= myNewValue;
-
-            if (validation) { 
-                MessageBox.Show("Suceess!");
-            }else
-            {
-                MessageBox.Show("Failed!");
+            for(int i = 0; i<10; i++) { 
+                bool validation = myValue < myNewValue;
+                if (validation)
+                {
+                    myValue += myValue * myNewValue;
+                }
             }
+     
+            MessageBox.Show("Suceess: " + myValue);
+
         }
 
         private void button2_Click(object sender, EventArgs e)
