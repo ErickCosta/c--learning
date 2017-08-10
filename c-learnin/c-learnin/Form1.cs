@@ -79,13 +79,15 @@ namespace c_learnin
             count.count = 1;
             count.name = "John";
             count.total = 1000;
+            count.address = new Address();
+            count.address.name = "Street 1";
 
             Count count1= new Count();
             count1.count= 1;
             count1.name= "John";
             count1.total = 1000;
 
-            MessageBox.Show("My object is: " + count.Transfer(900, count, count1));
+            MessageBox.Show("My object is: " + count.address.name);
         }
     }
 }
