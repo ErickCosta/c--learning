@@ -64,5 +64,23 @@ namespace c_learnin
              */
             MessageBox.Show("The value is: " + (double)AgeTotal / (double)CountNumber);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int countNumber1 = 1;
+            string countName1 = "Erick";
+            double countTotal1 = 1000;
+
+            int countNumber2 = 2;
+            string countName2 = "Costa";
+            double countTotal2 = 2000;
+
+            Count count = new Count();
+            count.count = 1;
+            count.name = "John";
+            count.total = 1000;
+
+            MessageBox.Show("My object is: " + count.name);
+        }
     }
 }
