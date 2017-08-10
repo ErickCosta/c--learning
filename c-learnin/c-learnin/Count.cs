@@ -8,4 +8,12 @@ public class Count
     public Count()
     {
     }
+
+    public double Transfer(double value, Count sub, Count sum)
+    {
+        sub.total -= value;
+        sum.total += value;
+
+        return sub.total;
+    }
 }
